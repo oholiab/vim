@@ -10,6 +10,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'fatih/vim-go'
+Plugin 'jonathanfilip/vim-lucius'
 
 call vundle#end()
 filetype plugin indent on
@@ -40,6 +42,8 @@ set pastetoggle=<F2>
 
 
 "make it pretty
+colorscheme lucius
+LuciusBlackHighContrast
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
