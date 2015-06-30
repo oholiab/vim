@@ -12,7 +12,6 @@ Plugin 'fholgado/minibufexpl.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'fatih/vim-go'
 Plugin 'jonathanfilip/vim-lucius'
-Plugin '
 
 call vundle#end()
 filetype plugin indent on
