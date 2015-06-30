@@ -12,6 +12,7 @@ Plugin 'fholgado/minibufexpl.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'fatih/vim-go'
 Plugin 'jonathanfilip/vim-lucius'
+Plugin '
 
 call vundle#end()
 filetype plugin indent on
@@ -30,6 +31,8 @@ if exists('+colorcolumn')
   hi ColorColumn ctermbg=darkgrey guibg=darkgrey
   set cc=80
 endif
+nmap <silent> <C-p> :bprevious!<CR>
+nmap <silent> <C-n> :bnext!<CR>
 
 "tab expansion
 set tabstop=2
