@@ -79,3 +79,8 @@ let g:syntastic_enable_signs=1
 let g:syntastic_check_on_open=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_loc_list_height=5
+
+"file types
+au BufRead,BufNewFile *.pp set filetype=puppet
+au BufRead,BufNewFile *.md set filetype=markdown
+au Filetype markdown setlocal textwidth=80
