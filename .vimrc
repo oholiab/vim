@@ -15,6 +15,7 @@ Plugin 'fholgado/minibufexpl.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'fatih/vim-go'
 Plugin 'jonathanfilip/vim-lucius'
+Plugin 'rodjek/vim-puppet'
 
 call vundle#end()
 filetype plugin indent on
