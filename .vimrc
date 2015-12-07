@@ -85,3 +85,5 @@ let g:syntastic_loc_list_height=5
 au BufRead,BufNewFile *.pp set filetype=puppet
 au BufRead,BufNewFile *.md set filetype=markdown
 au Filetype markdown setlocal textwidth=80
+au Filetype python setlocal tabstop=4
+au Filetype python setlocal shiftwidth=4
