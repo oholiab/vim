@@ -91,3 +91,5 @@ au BufRead,BufNewFile *.md set filetype=markdown
 au Filetype markdown setlocal textwidth=80
 au Filetype python setlocal tabstop=4
 au Filetype python setlocal shiftwidth=4
+au Filetype dosini setlocal tabstop=4
+au Filetype dosini setlocal shiftwidth=4
