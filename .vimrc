@@ -10,6 +10,10 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-salve'
+Plugin 'guns/vim-clojure-static'
+Plugin 'vim-scripts/paredit.vim'
 Plugin 'bling/vim-airline'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'scrooloose/syntastic'
