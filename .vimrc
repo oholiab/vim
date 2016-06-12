@@ -88,6 +88,11 @@ let g:syntastic_check_on_open=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_loc_list_height=5
 let g:syntastic_always_populate_loc_list=0
+let g:loaded_syntastic_c_avrgcc_checker = 1
+"let g:syntastic_avrgcc_config_file = '.syntastic_avrgcc_config'
+if filereadable(expand('%:p')) && match(readfile(expand('%:p')),"#include <avr")!=-1
+  let g:syntastic_c_compiler = 'avr-gcc'
+endif
 
 "rust autofmt
 let g:rustfmt_autosave=1
