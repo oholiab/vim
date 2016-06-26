@@ -3,15 +3,18 @@
 "══╝╝ ╝╝╝╝╝╝╝╝══╝╝ ╝╝╝ ╝══╝
 "load vundle
 set nocp
+set exrc
+set secure
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-salve'
+Plugin 'tpope/vim-surround'
 Plugin 'guns/vim-clojure-static'
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'bling/vim-airline'
@@ -90,7 +93,7 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_loc_list_height=5
 let g:syntastic_always_populate_loc_list=0
 let g:loaded_syntastic_c_avrgcc_checker = 1
-"let g:syntastic_avrgcc_config_file = '.syntastic_avrgcc_config'
+let g:syntastic_avrgcc_config_file = '.syntastic_avrgcc_config'
 if filereadable(expand('%:p')) && match(readfile(expand('%:p')),"#include <avr")!=-1
   let g:syntastic_c_compiler = 'avr-gcc'
 endif
